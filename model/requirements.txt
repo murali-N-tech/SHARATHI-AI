@@ -1,0 +1,28 @@
+# Core web
+fastapi==0.104.1
+uvicorn==0.24.0
+pydantic==2.5.0
+requests>=2.31.0
+pymongo>=4.6.0
+cryptography>=42.0.0
+
+# PDF processing
+pypdf>=4.0.0
+
+# Embeddings / ML
+sentence-transformers>=2.2.2
+# Torch: on Windows it's recommended to install from the PyTorch index
+# (see https://pytorch.org/) — this line ensures a compatible torch is present
+torch>=2.1.0
+
+# Data science
+scikit-learn>=1.5.1
+numpy>=1.24.3
+
+# Misc
+python-dotenv>=1.0.0
+
+# NOTE: If you see build errors for `torch` on Windows, run the
+# following (CPU-only) before installing this file:
+#   python -m pip install --upgrade pip
+#   python -m pip install "torch" --index-url https://download.pytorch.org/whl/cpu
